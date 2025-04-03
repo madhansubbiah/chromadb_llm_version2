@@ -8,8 +8,8 @@ from dotenv import load_dotenv
 from huggingface_hub import login
 load_dotenv()
 
- os.environ['PATH'] = './:' + os.environ['PATH']
- print("SQLite Version:", sqlite3.sqlite_version)
+os.environ['PATH'] = './:' + os.environ['PATH']
+print("SQLite Version:", sqlite3.sqlite_version)
 
 from dotenv import load_dotenv
 load_dotenv()
