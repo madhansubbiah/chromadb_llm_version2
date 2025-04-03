@@ -1,3 +1,9 @@
+import pysqlite3
+import sys
+
+# Replace the built-in sqlite3 module with pysqlite3
+sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
+
 import streamlit as st
 import os
 from query_rag_application import index_data, query_file_and_invoke_llm
