@@ -4,6 +4,7 @@ import os
 from langchain_core.documents import Document
 from langchain_chroma import Chroma
 from huggingface_hub import login
+import streamlit as st
 
 from dotenv import load_dotenv
 load_dotenv()

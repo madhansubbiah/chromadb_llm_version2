@@ -6,6 +6,7 @@ from langchain_chroma import Chroma
 from main import store_pdf_data_in_vector_db
 from dotenv import load_dotenv
 from huggingface_hub import login
+import streamlit as st
 load_dotenv()
 
 os.environ['PATH'] = './:' + os.environ['PATH']
